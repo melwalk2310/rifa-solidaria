@@ -73,10 +73,10 @@ const App = () => {
       const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          number, 
+        body: JSON.stringify({
+          number,
           action: isAdding ? 'sell' : 'release',
-          password: adminPassword 
+          password: adminPassword
         })
       });
       if (!response.ok) throw new Error("Error en servidor");

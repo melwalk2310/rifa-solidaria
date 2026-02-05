@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rifa Solidaria — Alternativa</title>
+    <style>
+      body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:#fff;color:#111;display:flex;min-height:100vh;align-items:center;justify-content:center}
+      .card{max-width:920px;width:94%;padding:2rem;border-radius:1rem;box-shadow:0 10px 40px rgba(0,0,0,0.08);text-align:center}
+      .images{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+      .images img{width:280px;height:280px;object-fit:cover;border-radius:.8rem;border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+      h1{font-size:clamp(1.4rem,3.9vw,2.2rem);margin:0}
+      p{color:#555;margin:.6rem 0 0}
+      .note{font-size:.85rem;color:#888;margin-top:1rem}
+      @media(max-width:640px){.images img{width:160px;height:160px}}
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Rifa Solidaria — Vista Alternativa</h1>
+      <p>Esta página estática puede usarse si el frontend principal no carga.</p>
+
+      <div class="images">
+        <!-- Sustituye estas rutas por tus fotos reales en public/images -->
+        <div>
+          <figure>
+            <img src="/images/leyla-placeholder.svg" alt="Beneficiaria" />
+            <figcaption class="note">Foto beneficiaria (reemplaza: /images/leyla.jpg)</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="/images/premio-placeholder.svg" alt="Premio" />
+            <figcaption class="note">Foto del premio (reemplaza: /images/premio.jpg)</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <p class="note">Para usar tus fotos: coloca `leyla.jpg` y `premio.jpg` en la carpeta <strong>public/images/</strong> y recarga.</p>
+      <p class="note">Accede a esta página en desarrollo en <code>/alternate.html</code> o en producción: <code>https://TU-SITIO.netlify.app/alternate.html</code></p>
+    </div>
+  </body>
+</html>
